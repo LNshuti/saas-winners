@@ -45,35 +45,22 @@ To understand which of the two buttons (indicators) users are more likely to cli
 We calculate the sample size for each group to detect the expected change in CTR with the given significance level and power. We use a sample size calculator for proportions.
 
 **Sample Size Calculation Formula:**
-\[ 
-n = \frac{{(Z_{\alpha/2} + Z_{\beta})^2 \times [p_1(1 - p_1) + p_2(1 - p_2)]}}{{(p_1 - p_2)^2}} 
-\]
+
+$$ n = \frac{{(Z_{\alpha/2} + Z_{\beta})^2 \times [p_1(1 - p_1) + p_2(1 - p_2)]}}{{(p_1 - p_2)^2}} $$
 
 Where:
-- \( Z_{\alpha/2} \) = Z-value for the desired significance level (1.96 for 0.05)
-- \( Z_{\beta} \) = Z-value for the desired power (0.84 for 0.8)
-- \( p_1 \) = baseline conversion rate (10% or 0.10)
-- \( p_2 \) = expected conversion rate (12% or 0.12)
+- $ Z_{\alpha/2} $ = Z-value for the desired significance level (1.96 for 0.05)
+- $ Z_{\beta} $ = Z-value for the desired power (0.84 for 0.8)
+- $ p_1 $ = baseline conversion rate (10% or 0.10)
+- $ p_2 $ = expected conversion rate (12% or 0.12)
 
 Plugging in the values:
-\[ 
-n = \frac{{(1.96 + 0.84)^2 \times [0.10(1 - 0.10) + 0.12(1 - 0.12)]}}{{(0.12 - 0.10)^2}} 
-\]
-\[ 
-n = \frac{{(2.8)^2 \times [0.10 \times 0.90 + 0.12 \times 0.88]}}{{(0.02)^2}} 
-\]
-\[ 
-n = \frac{{7.84 \times [0.09 + 0.1056]}}{{0.0004}} 
-\]
-\[ 
-n = \frac{{7.84 \times 0.1956}}{{0.0004}} 
-\]
-\[ 
-n = \frac{{1.534464}}{{0.0004}} 
-\]
-\[ 
-n = 3836.16 
-\]
+$$ n = \frac{{(1.96 + 0.84)^2 \times [0.10(1 - 0.10) + 0.12(1 - 0.12)]}}{{(0.12 - 0.10)^2}} $$
+$$ n = \frac{{(2.8)^2 \times [0.10 \times 0.90 + 0.12 \times 0.88]}}{{(0.02)^2}} $$
+$$ n = \frac{{7.84 \times [0.09 + 0.1056]}}{{0.0004}} $$
+$$ n = \frac{{7.84 \times 0.1956}}{{0.0004}} $$
+$$ n = \frac{{1.534464}}{{0.0004}} $$
+$$ n = 3836.16 $$
 
 
 
