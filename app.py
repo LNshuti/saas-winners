@@ -115,7 +115,7 @@ def visualize_network():
     
     # Plot the graph
     pos = nx.spring_layout(G, k=0.3)
-    plt.figure(figsize=(15, 15))  # Increased plot size
+    plt.figure(figsize=(12, 12))  # Increased plot size
     nx.draw(
         G,
         pos,
