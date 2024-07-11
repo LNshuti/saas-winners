@@ -40,7 +40,7 @@ To understand which of the two buttons (indicators) users are more likely to cli
 ### **Planned duration of the test:**
 - 30 days
 
-### Sample Size Calculation
+## Sample Size Calculation
 
 We calculate the sample size for each group to detect the expected change in CTR with the given significance level and power. We use a sample size calculator for proportions.
 
@@ -74,5 +74,6 @@ n = \frac{{1.534464}}{{0.0004}}
 \[ 
 n = 3836.16 
 \]
+
 
 
