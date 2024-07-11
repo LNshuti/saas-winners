@@ -1,63 +1,52 @@
  [SAAS](https://huggingface.co/spaces/LeonceNsh/venture-winners): Network analysis of successful VC-funded Software companies
 
-**1. Accel Partners
-**
+**1. Accel Partners**
 - Meta 
 - Dropbox
 - Spotify
 
-**2. Andreessen Horowitz
-**
+**2. Andreessen Horowitz**
 - Airbnb 
 - Lyft 
 - Pinterest 
 
-**3. GV (Google Ventures)
-**
+**3. GV (Google Ventures)**
 - Uber 
 - LendingClub 
 
-**4. Greylock Partners
-**
+**4. Greylock Partners**
 - Workday 
 - Palo Alto Networks 
 
-**5. Lightspeed Venture Partners
-**
+**5. Lightspeed Venture Partners**
 - Snap Inc.
 - Grubhub 
 - AppDynamics 
 
-**6. Benchmark
-**
+**6. Benchmark**
 - Snap Inc
 - Uber 
 - WeWork 
 
-**7. Norwest Venture Partners
-**
+**7. Norwest Venture Partners**
 - LendingClub 
 - Opendoor.
 
-**8. Emergence Capital Partners
-**
+**8. Emergence Capital Partners**
 - Zoom Video Communications
 - Box 
 - Salesforce
 
-**9. Trinity Ventures
-**
+**9. Trinity Ventures**
 - New Relic
 - Care.com 
 - TubeMogul
 
-** 10. Citi Ventures
-**
+**10. Citi Ventures**
 - Square 
 - Nutanix
 
-**11. Sequoia Capital
-**
+**11. Sequoia Capital**
 - Alphabet (Google).
 - NVIDIA 
 - Dropbox 
@@ -73,9 +62,8 @@
 - Reddit
 - Uber
 
-**12. Y Combinator
-**
--  Dropbox
+**12. Y Combinator**
+- Dropbox
 - Airbnb
 - Coinbase
 - DoorDash
