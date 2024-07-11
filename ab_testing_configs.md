@@ -41,8 +41,6 @@ To understand which of the two buttons (indicators) users are more likely to cli
 - 30 days
 
 **Sample Size Calculation Formula:**
-$$ n = \frac{{(Z_{\alpha/2} + Z_{\beta})^2 \times [p_1(1 - p_1) + p_2(1 - p_2)]}}{{(p_1 - p_2)^2}} $$
-
 
 ```
 n = ((Z_α/2 + Z_β)^2 × [p_1(1 - p_1) + p_2(1 - p_2)]) / (p_1 - p_2)^2
