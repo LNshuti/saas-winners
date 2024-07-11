@@ -1,20 +1,27 @@
-### Step 1: Define the Test Objective
 
-**Objective:**
+## **Objective:**
 To understand which of the two buttons (indicators) users are more likely to click and use for longer times on the app.
 
-### Step 2: Test Groups
+### Summary
 
-**Number of test groups:**
+- **Objective:** Compare click-through rates and usage time for SMA vs. MACD buttons.
+- **Test Groups:** 2 (Button A: SMA, Button B: MACD)
+- **Key Metrics:** CTR, Average usage time
+- **Traffic Allocation:** 50% SMA, 50% MACD
+- **Significance Level:** 0.05
+- **Power:** 0.8
+- **Minimum Sample Size:** 3837 users per group
+- **Test Duration:** 30 days
+
+### **Number of test groups:**
 2 (Button A: SMA, Button B: MACD)
 
-### Step 3: Key Metrics
+### Key Metrics
 
-**Key Metrics:**
 - Click-through rate (CTR) for each button
 - Average usage time of each button
 
-### Step 4: Expected Conversion Rates
+### Expected Conversion Rates
 
 **Current conversion rate (baseline) and expected lift:**
 - Baseline CTR for Button A (SMA): 10%
@@ -22,30 +29,21 @@ To understand which of the two buttons (indicators) users are more likely to cli
 - Baseline CTR for Button B (MACD): 10%
 - Expected CTR for Button B (MACD): 12%
 
-### Step 5: Significance Level and Power
-
-**Significance level (alpha) and power (1-beta):**
+### **Significance level (alpha) and power (1-beta):**
 - Significance level: 0.05
 - Power: 0.8
 
-### Step 6: Traffic Allocation
-
-**Traffic allocation between the test groups:**
+### **Traffic allocation between the test groups:**
 - 50% to Button A (SMA)
 - 50% to Button B (MACD)
 
-### Step 7: Duration of the Test
-
-**Planned duration of the test:**
+### **Planned duration of the test:**
 - 30 days
 
----
-
-Based on these details, I'll calculate the minimum sample size required for the test. 
-
+-
 ### Sample Size Calculation
 
-We need to calculate the sample size for each group to detect the expected change in CTR with the given significance level and power. For this, we'll use a sample size calculator for proportions.
+We calculate the sample size for each group to detect the expected change in CTR with the given significance level and power. We use a sample size calculator for proportions.
 
 **Sample Size Calculation Formula:**
 \[ n = \frac{{(Z_{\alpha/2} + Z_{\beta})^2 \times [p_1(1 - p_1) + p_2(1 - p_2)]}}{{(p_1 - p_2)^2}} \]
@@ -64,15 +62,3 @@ Plugging in the values:
 \[ n = \frac{{1.534464}}{{0.0004}} \]
 \[ n = 3836.16 \]
 
-So, each group should have at least 3837 users.
-
-### Summary
-
-- **Objective:** Compare click-through rates and usage time for SMA vs. MACD buttons.
-- **Test Groups:** 2 (Button A: SMA, Button B: MACD)
-- **Key Metrics:** CTR, Average usage time
-- **Traffic Allocation:** 50% SMA, 50% MACD
-- **Significance Level:** 0.05
-- **Power:** 0.8
-- **Minimum Sample Size:** 3837 users per group
-- **Test Duration:** 30 days
