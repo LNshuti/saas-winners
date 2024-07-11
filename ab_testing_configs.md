@@ -14,7 +14,7 @@ To understand which of the two buttons (indicators) users are more likely to cli
 - **Test Duration:** 30 days
 
 ### **Number of test groups:**
-2 (Button A: SMA, Button B: MACD)
+- 2 (Button A: SMA, Button B: MACD)
 
 ### Key Metrics
 
@@ -40,7 +40,6 @@ To understand which of the two buttons (indicators) users are more likely to cli
 ### **Planned duration of the test:**
 - 30 days
 
--
 ### Sample Size Calculation
 
 We calculate the sample size for each group to detect the expected change in CTR with the given significance level and power. We use a sample size calculator for proportions.
