@@ -8,7 +8,145 @@
 **2. Andreessen Horowitz**
 - Airbnb 
 - Lyft 
-- Pinterest 
+- Pinterest
+- Accolade
+- Actifio
+- Affirm
+- Amify
+- Apptio
+- Arimo
+- Asana
+- Asserts
+- Authy
+- Automatic
+- Barefoot Networks
+- Bebop
+- BeReal
+- Blockspring
+- Boku
+- Box
+- Bracket Computing
+- Bump
+- BuzzFeed
+- Capital
+- Cardiogram
+- Caviar
+- Citiizen
+- CipherCloud
+- ClearStory
+- Coinbase
+- Cumulus
+- DeepMap
+- Delphix
+- DigitalOcean
+- Dollar Shave Club
+- Earn
+- EQRx
+- Erasca
+- Facebook
+- FiftyThree
+- Flutter
+- Fusion-io
+- Gainspeed
+- Genius
+- GitHub
+- Gobble
+- Golden
+- Greenlight
+- Granular
+- Greplify
+- Groupon
+- Hatch
+- iCracked
+Imgur
+Instacart
+Instagram
+Intrinsic
+Isovalent
+Jopwell
+Julep
+Jungla
+Keybase
+Kno
+Knowable
+Knowmia
+Loom
+Lowkey
+Luma
+Lyrebird
+Lytro
+Massive
+Morta Security
+Nautilus Biotechnology
+Nicira
+Oculus
+Okta
+Onshape
+Opendoor
+OpenInvest
+Optimizely
+Optimyze
+PagerDuty
+Parsec
+Patch Biosciences
+PatientPing
+PicCloud
+Pinterest
+Pixate
+Platfora
+Product Hunt
+Quantopian
+RHL Ventures
+Reddit
+Reflektive
+Rigetti
+Rival
+Robinhood
+Roblox
+Rockmelt
+RTFKT
+Samsara
+Seed
+Shapeways
+ShoeDazzle
+SignalFx
+SigOpt
+Silver Tail Systems
+Skout
+Skype
+Slack
+Socialcam
+Soylent
+Stack Overflow
+Standard Treasury
+Swell
+Swiftype
+Tabular
+Talaria
+Tasty Labs
+Teleport
+Tenfold
+Tidemark
+Tilt
+TinyCo
+Tmunity
+Tomfoolery
+Wise
+TXN
+Urban Engines
+Usermind
+Viki
+Walker and Company
+Wit.ai
+Within
+Zynga
+Altitude Learning
+Bromium
+Factual
+Instart
+Proven
+Rabbit
+UnifyID
 
 **3. GV (Google Ventures)**
 - Uber 
