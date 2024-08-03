@@ -1,6 +1,0 @@
-dependencies:
-  flutter:
-    sdk: flutter
-  http: ^0.13.3
-  charts_flutter: ^0.12.0
-  posthog_flutter: ^0.1.0  # Assuming this is the package name based on your library
