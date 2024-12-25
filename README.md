@@ -1,6 +1,6 @@
 # [venture-winners](https://leoncensh-networkx-saas.hf.space/): Network analysis of successful VC-funded Software companies
 
-![nets](googleventures.gif)
+![nets](googleventures1080.gif)
 
 # How to run this app on your own machine! 
 
