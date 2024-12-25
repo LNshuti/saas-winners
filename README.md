@@ -29,7 +29,7 @@ conda activate saas-winers
 pip install -r requirements.txt
 ```
 
-### Run the **connect_db.py** python helper file to load your data into the database
+### Run the **app.py** 
 ```bash
 python app.py
 ```
