@@ -2,7 +2,7 @@
 
 ## Network analysis of Venture-funded Unicorns using CBInsights data 
 
-## Data up to date as of 09/21/2024
+## Data as of 09/21/2024
 
 ![nets](googleventures1080.gif)
 
