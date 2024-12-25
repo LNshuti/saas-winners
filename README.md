@@ -9,7 +9,9 @@
 ### Clone this Repository
 
 ```bash
-git clone https://github.com/LNshuti/usgov-contracts-rag.git
+git clone https://github.com/LNshuti/saas-winners.git
+
+
 ```
 
 ### Setup your Environment
