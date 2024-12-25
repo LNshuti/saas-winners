@@ -1,6 +1,8 @@
 # [venture-winners](https://leoncensh-networkx-saas.hf.space/)
 
-## Network analysis of successful VC-funded Software companies
+## Network analysis of Venture-funded Unicorns using CBInsights data 
+
+## Data up to date as of 09/21/2024
 
 ![nets](googleventures1080.gif)
 
