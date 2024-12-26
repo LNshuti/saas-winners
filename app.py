@@ -1,6 +1,3 @@
-# pylint: disable=import-error,missing-function-docstring,too-many-locals,too-many-statements
-# pylint: disable=too-many-arguments,too-many-positional-arguments
-
 """
 Network analysis of Venture-funded Unicorns using CBInsights data.
 """
