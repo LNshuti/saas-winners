@@ -33,7 +33,7 @@ conda activate saas-winers
 pip install -r requirements.txt
 ```
 
-### Run the **app.py** 
+### Run the **app** 
 ```bash
 python app.py
 ```
