@@ -1,2 +1,5 @@
 networkx
 yfinance
+pandas 
+plotly 
+matplotlib
