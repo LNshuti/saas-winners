@@ -1,3 +1,6 @@
+"""
+This app is a Network analysis of Venture-funded Unicorns using CBInsights data.
+"""
 import re
 import logging
 import pandas as pd
