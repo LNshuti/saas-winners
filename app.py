@@ -1,8 +1,8 @@
 import re
 import logging
 import pandas as pd
-import networkx as nx
 import plotly.graph_objects as go
+import networkx as nx
 import gradio as gr
 
 # Set up logging
@@ -10,7 +10,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Load and preprocess the dataset
-file_path = "cbinsights_data.csv"  # Replace with your actual file path
+file_path = "cbinsights_data.csv"  
 
 try:
     data = pd.read_csv(file_path, skiprows=1)
@@ -33,7 +33,7 @@ data = data[data.industry != 'Health']
 valuation_columns = [col for col in data.columns if 'valuation' in col.lower()]
 if len(valuation_columns) != 1:
     logger.error("Unable to identify a single valuation column.")
-    raise ValueError("Dataset should contain exactly one column with 'valuation' in its name.")
+    raise ValueError("Dataset must contain one column with 'valuation' name.")
 
 valuation_column = valuation_columns[0]
 logger.info(f"Using valuation column: {valuation_column}")
@@ -69,9 +69,11 @@ def build_investor_company_mapping(df):
 investor_company_mapping = build_investor_company_mapping(data)
 logger.info("Investor to company mapping created.")
 
-# Filter investors by country, industry, investor selection, and company selection
-def filter_investors(selected_country, selected_industry, selected_investors, selected_company,
-                     exclude_countries, exclude_industries, exclude_companies, exclude_investors):
+# Filter by country, industry, investor selection, and company
+def filter_investors(selected_country, selected_industry,
+                     selected_investors, selected_company,
+                     exclude_countries, exclude_industries,
+                     exclude_companies, exclude_investors):
     filtered_data = data.copy()
 
     # Inclusion filters
@@ -83,7 +85,8 @@ def filter_investors(selected_country, selected_industry, selected_investors, se
         filtered_data = filtered_data[filtered_data["Company"] == selected_company]
     if selected_investors:
         pattern = '|'.join([re.escape(inv) for inv in selected_investors])
-        filtered_data = filtered_data[filtered_data["Select_Investors"].str.contains(pattern, na=False)]
+        filtered_data = filtered_data[filtered_data["Select_Investors"].str.contains(pattern,
+                                                                                     na=False)]
 
     # Exclusion filters
     if exclude_countries:
@@ -94,7 +97,8 @@ def filter_investors(selected_country, selected_industry, selected_investors, se
         filtered_data = filtered_data[~filtered_data["Company"].isin(exclude_companies)]
     if exclude_investors:
         pattern = '|'.join([re.escape(inv) for inv in exclude_investors])
-        filtered_data = filtered_data[~filtered_data["Select_Investors"].str.contains(pattern, na=False)]
+        filtered_data = filtered_data[~filtered_data["Select_Investors"].str.contains(pattern, 
+                                                                                      na=False)]
 
     investor_company_mapping_filtered = build_investor_company_mapping(filtered_data)
     filtered_investors = list(investor_company_mapping_filtered.keys())
