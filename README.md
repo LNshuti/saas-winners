@@ -1,6 +1,6 @@
 # [venture-unicorns](https://leoncensh-networkx-saas.hf.space/)
 
-## Network analysis of Venture-backed Unicorns using CBInsights data 
+## Network analysis of venture-backed unicorns using CB Insights data
 
 ## Data as of 09/21/2024
 
