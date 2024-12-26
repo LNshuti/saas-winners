@@ -1,5 +1,5 @@
 """
-This app is a Network analysis of Venture-funded Unicorns using CBInsights data.
+Network analysis of Venture-funded Unicorns using CBInsights data.
 """
 import re
 import logging
@@ -35,15 +35,18 @@ data = data[data.industry != 'Health']
 # Identify the valuation column
 valuation_columns = [col for col in data.columns if 'valuation' in col.lower()]
 if len(valuation_columns) != 1:
-    logger.error("Unable to identify a single valuation column.")
-    raise ValueError("Dataset must contain one column with 'valuation' name.")
+    logger.error("Unable to identify a valuation column.")
+    raise ValueError("must contain one column with 'valuation' name.")
 
 valuation_column = valuation_columns[0]
 logger.info(f"Using valuation column: {valuation_column}")
 
 # Clean and prepare data
-data["Valuation_Billions"] = data[valuation_column].replace({'\$': '', ',': ''}, regex=True)
-data["Valuation_Billions"] = pd.to_numeric(data["Valuation_Billions"], errors='coerce')
+data["Valuation_Billions"] = data[valuation_column].replace({'\$': '',
+                                                             ',': ''},
+                                                            regex=True)
+data["Valuation_Billions"] = pd.to_numeric(data["Valuation_Billions"],
+                                           errors='coerce')
 data = data.apply(lambda col: col.str.strip() if col.dtype == "object" else col)
 data.rename(columns={
     "company": "Company",
@@ -66,17 +69,22 @@ def build_investor_company_mapping(df):
             for investor in investors.split(","):
                 investor = investor.strip()
                 if investor:
-                    mapping.setdefault(investor, []).append(company)
+                    mapping.setdefault(investor,
+                                       []).append(company)
     return mapping
 
 investor_company_mapping = build_investor_company_mapping(data)
 logger.info("Investor to company mapping created.")
 
 # Filter by country, industry, investor selection, and company
-def filter_investors(selected_country, selected_industry,
-                     selected_investors, selected_company,
-                     exclude_countries, exclude_industries,
-                     exclude_companies, exclude_investors):
+def filter_investors(selected_country, 
+                     selected_industry,
+                     selected_investors,
+                     selected_company,
+                     exclude_countries,
+                     exclude_industries,
+                     exclude_companies,
+                     exclude_investors):
     filtered_data = data.copy()
 
     # Inclusion filters
@@ -123,11 +131,13 @@ def generate_graph(investors, filtered_data):
     while num_colors > len(color_palette):
         color_palette.extend(color_palette)
 
-    investor_color_map = {investor: color_palette[i] for i, investor in enumerate(unique_investors)}
+    investor_color_map = {investor: color_palette[i] for i, 
+                          investor in enumerate(unique_investors)}
 
     G = nx.Graph()
     for investor in investors:
-        companies = filtered_data[filtered_data["Select_Investors"].str.contains(re.escape(investor), na=False)]["Company"].tolist()
+        companies = filtered_data[filtered_data["Select_Investors"].str.contains(re.escape(investor),
+                                                                                 na=False)]["Company"].tolist()
         for company in companies:
             G.add_node(company)
             G.add_node(investor)
@@ -175,7 +185,8 @@ def generate_graph(investors, filtered_data):
             if len(valuation) > 0 and not pd.isnull(valuation[0]):
                 hovertext += f"<br>Valuation: ${valuation[0]:.2f}B"
             node_hovertext.append(hovertext)
-            if len(filtered_data) < 15 or node in filtered_data.nlargest(5, "Valuation_Billions")["Company"].tolist():
+            if len(filtered_data) < 15 or node in filtered_data.nlargest(5,
+                                                                         "Valuation_Billions")["Company"].tolist():
                 node_text.append(node)  # Add company labels
                 node_textposition.append('bottom center')
             else:
@@ -212,14 +223,20 @@ def generate_graph(investors, filtered_data):
         width=1200,
         height=800,
         autosize=True,
-        xaxis=dict(showgrid=False, zeroline=False, visible=False),
-        yaxis=dict(showgrid=False, zeroline=False, visible=False),
+        xaxis=dict(showgrid=False, zeroline=False, 
+                   visible=False),
+        yaxis=dict(showgrid=False, 
+                   zeroline=False,
+                   visible=False),
         showlegend=False,  # Hide the legend to maximize space
         annotations=[
             dict(
-                x=0.5, y=1.1, xref='paper', yref='paper',
+                x=0.5, y=1.1, xref='paper', 
+                yref='paper',
                 text=f"Total Market Cap of Companies: ${total_market_cap:.2f}B",
-                showarrow=False, font=dict(size=14), xanchor='center'
+                showarrow=False, 
+                font=dict(size=14),
+                xanchor='center'
             )
         ]
     )
@@ -227,11 +244,23 @@ def generate_graph(investors, filtered_data):
     return fig
 
 # Gradio app
-def app(selected_country, selected_industry, selected_company, selected_investors,
-        exclude_countries, exclude_industries, exclude_companies, exclude_investors):
+def app(selected_country, 
+        selected_industry,
+        selected_company, 
+        selected_investors,
+        exclude_countries,
+        exclude_industries,
+        exclude_companies,
+        exclude_investors):
     investors, filtered_data = filter_investors(
-        selected_country, selected_industry, selected_investors, selected_company,
-        exclude_countries, exclude_industries, exclude_companies, exclude_investors
+        selected_country, 
+        selected_industry,
+        selected_investors,
+        selected_company,
+        exclude_countries, 
+        exclude_industries,
+        exclude_companies,
+        exclude_investors
     )
     if not investors:
         return go.Figure()
@@ -247,19 +276,46 @@ def main():
     with gr.Blocks(title="Venture Networks Visualization") as demo:
         gr.Markdown("# Venture Networks Visualization")
         with gr.Row():
-            country_filter = gr.Dropdown(choices=country_list, label="Country", value="All")
-            industry_filter = gr.Dropdown(choices=industry_list, label="Industry", value="All")
-            company_filter = gr.Dropdown(choices=company_list, label="Company", value="All")
-            investor_filter = gr.Dropdown(choices=investor_list, label="Select Investors", value=[], multiselect=True)
+            country_filter = gr.Dropdown(choices=country_list, 
+                                         label="Country",
+                                         value="All")
+            industry_filter = gr.Dropdown(choices=industry_list,
+                                          label="Industry", 
+                                          value="All")
+            company_filter = gr.Dropdown(choices=company_list,
+                                         label="Company",
+                                         value="All")
+            investor_filter = gr.Dropdown(choices=investor_list, 
+                                          label="Select Investors",
+                                          value=[], 
+                                          multiselect=True)
         with gr.Row():
-            exclude_country_filter = gr.Dropdown(choices=country_list[1:], label="Exclude Country", value=[], multiselect=True)
-            exclude_industry_filter = gr.Dropdown(choices=industry_list[1:], label="Exclude Industry", value=[], multiselect=True)
-            exclude_company_filter = gr.Dropdown(choices=company_list[1:], label="Exclude Company", value=[], multiselect=True)
-            exclude_investor_filter = gr.Dropdown(choices=investor_list, label="Exclude Investors", value=[], multiselect=True)
+            exclude_country_filter = gr.Dropdown(choices=country_list[1:], 
+                                                 label="Exclude Country", 
+                                                 value=[], 
+                                                 multiselect=True)
+            exclude_industry_filter = gr.Dropdown(choices=industry_list[1:], 
+                                                  label="Exclude Industry",
+                                                  value=[], 
+                                                  multiselect=True)
+            exclude_company_filter = gr.Dropdown(choices=company_list[1:],
+                                                 label="Exclude Company", 
+                                                 value=[],
+                                                 multiselect=True)
+            exclude_investor_filter = gr.Dropdown(choices=investor_list, 
+                                                  label="Exclude Investors",
+                                                  value=[], 
+                                                  multiselect=True)
         graph_output = gr.Plot(label="Network Graph")
 
-        inputs = [country_filter, industry_filter, company_filter, investor_filter,
-                  exclude_country_filter, exclude_industry_filter, exclude_company_filter, exclude_investor_filter]
+        inputs = [country_filter,
+                  industry_filter, 
+                  company_filter, 
+                  investor_filter,
+                  exclude_country_filter,
+                  exclude_industry_filter, 
+                  exclude_company_filter, 
+                  exclude_investor_filter]
         outputs = [graph_output]
 
         # Set up event triggers for all inputs
