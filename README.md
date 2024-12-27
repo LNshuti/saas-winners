@@ -6,8 +6,6 @@
 
 ![nets](googleventures1080.gif)
 
-![image](https://github.com/user-attachments/assets/9259c9c9-2930-4071-b9d5-780e6ffe3d40)
-
 ### Clone this Repository
 
 ```bash
@@ -35,3 +33,5 @@ python app.py
 ```
 
 **If you found the app useful, please make sure to give us a star!**
+
+![image](https://github.com/user-attachments/assets/9259c9c9-2930-4071-b9d5-780e6ffe3d40)
