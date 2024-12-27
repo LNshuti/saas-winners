@@ -1,13 +1,11 @@
 # [venture-unicorns](https://leoncensh-networkx-saas.hf.space/)
 
-## Network analysis of venture-backed unicorns using CB Insights data
+## Network analysis of venture-backed unicorns using CB Insights data 09/21/2024
 
 ### Figure 1. General Catalyst U.S Portfolio in Enterprise Tech
 
 ![image](https://github.com/user-attachments/assets/9a1f6424-1814-4f68-ae28-b8146628a729)
 
-
-## Data as of 09/21/2024
 
 ![nets](googleventures1080.gif)
 
