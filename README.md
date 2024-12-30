@@ -15,6 +15,11 @@ git clone https://github.com/LNshuti/saas-winners.git
 conda env create --file=environment.yaml
 ```
 
+**Figure 0. YC Consumer** 
+
+![image](https://github.com/user-attachments/assets/728df22f-db7d-4fda-83e1-56a04fbd02af)
+
+
 ### Activate your Environment
 ```bash
 conda activate saas-winers
@@ -32,7 +37,6 @@ python app.py
 **Figure 1. Y Combinator Unicorns Enterprise SAAS**
 
 ![image](https://github.com/user-attachments/assets/2ece757b-5aa9-4919-a6be-2f60a7ec25db)
-
 
 **If you found the app useful, please make sure to give us a star!**
 
