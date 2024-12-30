@@ -31,7 +31,7 @@ python app.py
 ```
 **Figure 1. Y Combinator Unicorns Enterprise SAAS**
 
-![image](https://github.com/user-attachments/assets/c72a7809-3d55-477b-9157-b37143667b19)
+![image](https://github.com/user-attachments/assets/2ece757b-5aa9-4919-a6be-2f60a7ec25db)
 
 
 **If you found the app useful, please make sure to give us a star!**
