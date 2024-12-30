@@ -29,6 +29,10 @@ pip install -r requirements.txt
 ```bash
 python app.py
 ```
+**Figure 1. Y Combinator Unicorns Enterprise SAAS**
+
+![image](https://github.com/user-attachments/assets/c72a7809-3d55-477b-9157-b37143667b19)
+
 
 **If you found the app useful, please make sure to give us a star!**
 
