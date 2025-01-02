@@ -2,6 +2,11 @@
 
 ## Analysis of VC-backed unicorns using CB Insights data of 09-21-2024
 
+**Figure 0. YC Consumer** 
+
+![image](https://github.com/user-attachments/assets/728df22f-db7d-4fda-83e1-56a04fbd02af)
+
+
 ### Clone this Repository
 
 ```bash
@@ -12,11 +17,6 @@ git clone https://github.com/LNshuti/saas-winners.git
 ```bash
 conda env create --file=environment.yaml
 ```
-
-**Figure 0. YC Consumer** 
-
-![image](https://github.com/user-attachments/assets/728df22f-db7d-4fda-83e1-56a04fbd02af)
-
 
 ### Activate your Environment
 ```bash
