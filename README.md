@@ -1,8 +1,6 @@
-# [venture-unicorns](https://leoncensh-networkx-saas.hf.space/)
+# [venture-unicorns](https://leoncensh-networkx-saas.hf.space/) :custom_unicorn:
 
-## Network analysis of venture-backed unicorns using CB Insights data 09/21/2024
-
-![nets](googleventures1080.gif)
+## Analysis of VC-backed unicorns using CB Insights data of 09-21-2024
 
 ### Clone this Repository
 
