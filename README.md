@@ -2,7 +2,7 @@
 
 ## Analysis of VC-backed unicorns using CB Insights data of 09-21-2024
 
-**Figure 1. Y Combinator Consumer** 
+**Figure 1. Y Combinator** 
 
 ![image](https://github.com/user-attachments/assets/728df22f-db7d-4fda-83e1-56a04fbd02af)
 
