@@ -20,7 +20,7 @@ This is a repo for visualizing and analyzing CB Insights data, focusing on **net
 
 ![image](https://github.com/user-attachments/assets/fb0eb2d5-f7f8-4106-a59c-f934f2aa2646)
 
-##### **Note:All companies are in green. Venture firms have different colors. The company circle varies proportionately to the **private valuation**. 
+##### **Note:** All companies are in green. Venture firms have different colors. The company circle varies proportionately to the **private valuation**. 
 
 ### Clone this Repository
 
