@@ -16,6 +16,11 @@ This is a repo for visualizing and analyzing CB Insights data, focusing on **net
 
 ![image](https://github.com/user-attachments/assets/e5a79d25-ad27-40ae-ad55-f3b76415fc0a)
 
+**Figure 3. [Greylock](https://jobs.greylock.com/jobs?stages=10-100+employees&stages=100-1000+employees&stages=1000%2B+employees&locations=United+States&skills=SQL) and M12 Ventures unicorns**
+
+![image](https://github.com/user-attachments/assets/fb0eb2d5-f7f8-4106-a59c-f934f2aa2646)
+
+
 All companies are in green. Venture firms have different colors. The company circle varies proportionately to the **private valuation**. 
 
 ### Clone this Repository
