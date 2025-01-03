@@ -1,7 +1,8 @@
 # :unicorn: [venture-unicorns](https://leoncensh-networkx-saas.hf.space/) 
 
 ## Analysis of VC-backed unicorns using CB Insights data of 09-21-2024
-This is a repo for visualizing and analyzing CB Insights data, focusing on **network relationships and valuations**. It combines data processing, graph construction, and interactive visualizations using libraries **pandas, networkx, plotly, and gradio**.
+
+Gradio web application that  analyzes the relationships between venture capital firms, and invested companies. The app serves dual purposes: **for job hunters, it identifies companies with strong product-market fit backed by reputable investors** to target in their job search, while **for startup founders, it highlights which investors support competitors, enabling refined pitch strategies**. Built with Pandas, NetworkX, Plotly, and Gradio, the application relies on clean, standardized CSV datasets with unified date formats and no null values to ensure data integrity and accurate insights.
 
 ### Features
 - **Data Preprocessing:** Automatically cleans and standardizes column names and filters specific entries 
