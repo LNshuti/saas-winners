@@ -16,7 +16,7 @@ This is a repo for visualizing and analyzing CB Insights data, focusing on **net
 
 ![image](https://github.com/user-attachments/assets/e5a79d25-ad27-40ae-ad55-f3b76415fc0a)
 
-All companies are in green while venture firms have different colors. The diameter of the company circle varies proportionate to the valuation of the corresponding company. 
+All companies are in green. Venture firms have different colors. The company circle varies proportionately to the **private valuation**. 
 
 ### Clone this Repository
 
