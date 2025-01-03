@@ -12,6 +12,11 @@ This is a repo for visualizing and analyzing CB Insights data, focusing on **net
 
 ![image](https://github.com/user-attachments/assets/728df22f-db7d-4fda-83e1-56a04fbd02af)
 
+**Figure 2. Healthcare Unicorns between 5 and 10 Billion**
+
+![image](https://github.com/user-attachments/assets/e5a79d25-ad27-40ae-ad55-f3b76415fc0a)
+
+
 
 ### Clone this Repository
 
