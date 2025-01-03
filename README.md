@@ -4,11 +4,11 @@
 This is repo for visualizing and analyzing CB Insights data, focusing on **network relationships and valuations**. It combines data processing, graph construction, and interactive visualizations using libraries pandas, networkx, plotly, and gradio.
 
 ### Features
-**Data Preprocessing:** Automatically cleans and standardizes column names and filters specific entries 
-**Dynamic Column Identification:** Identifies the valuation column in the dataset dynamically to accommodate variations in column naming.
-**Valuation Analysis:** Converts valuation data into a clean numeric format for further analysis.
-**Interactive Graph Visualization:** Utilizes networkx and plotly to create interactive network graphs of relationships within the dataset.
-**Web Interface:** A gradio-based UI allows users to explore data and visualizations interactively.
+- **Data Preprocessing:** Automatically cleans and standardizes column names and filters specific entries 
+- **Dynamic Column Identification:** Identifies the valuation column in the dataset dynamically to accommodate variations in column naming.
+- **Valuation Analysis:** Converts valuation data into a clean numeric format for further analysis.
+- **Interactive Graph Visualization:** Utilizes networkx and plotly to create interactive network graphs of relationships within the dataset.
+- **Web Interface:** A gradio-based UI allows users to explore data and visualizations interactively.
 
 **Figure 1. Y Combinator** 
 
