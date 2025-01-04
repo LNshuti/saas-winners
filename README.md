@@ -23,6 +23,11 @@ Built with Pandas, NetworkX, Plotly, and Gradio, the application relies on clean
 
 ![image](https://github.com/user-attachments/assets/fb0eb2d5-f7f8-4106-a59c-f934f2aa2646)
 
+**Figure 4. Google Ventures** 
+
+![image](https://github.com/user-attachments/assets/f17424a7-a107-413c-808f-946f779ce904)
+
+
 ##### **Note:** All companies are in green. Venture firms have different colors. The company circle varies proportionately to the **private valuation**. 
 
 ### Clone this Repository
