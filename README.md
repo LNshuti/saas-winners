@@ -27,6 +27,10 @@ Built with Pandas, NetworkX, Plotly, and Gradio, the application relies on clean
 
 ![image](https://github.com/user-attachments/assets/f17424a7-a107-413c-808f-946f779ce904)
 
+**Figure 5. Founders Fund**
+
+![image](https://github.com/user-attachments/assets/e42b9071-5c81-4d17-9c6a-fd8e5eea6c0a)
+
 
 ##### **Note:** All companies are in green. Venture firms have different colors. The company circle varies proportionately to the **private valuation**. 
 
